@@ -2,6 +2,7 @@ import React from "react";
 import { TopSection } from "../components/TopSection";
 import { Introduction } from "../components/Introduction";
 import { IdoEvent } from "../components/IdoEvent";
+import { Tokenomics } from "../components/Tokenomics";
 
 export const Home = () => {
   return (
@@ -9,6 +10,7 @@ export const Home = () => {
       <TopSection />
       <Introduction />
       <IdoEvent />
+      <Tokenomics />
     </div>
   );
 };

@@ -133,7 +133,7 @@ export const IdoEvent = () => {
                 </p>
               </button>
               <button className="w-full h-[3rem] py-[10px] px-4 rounded-2xl bg-gradient-to-r from-[#ED0137] to-[#F05733]">
-                <p className="text-[#FFFFFF] text-center font-semibold leading-[18px] tracking-normal">
+                <p className="text-[#FFFFFF] text-center text-[17px] leading-[17px] zcool-kuaile-regular">
                   Claim Drop
                 </p>
               </button>
