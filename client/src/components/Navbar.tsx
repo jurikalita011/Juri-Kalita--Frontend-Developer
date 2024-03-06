@@ -3,13 +3,9 @@ import logo from "../assets/top-logo.svg";
 import arrowDown from "../assets/arrow-down.svg";
 export const Navbar = () => {
   return (
-    <div className="w-full border-2 border-green-400 flex items-center justify-evenly relative top-0">
-      <div className="flex justify-center items-center border-2 border-green-700">
-        <img
-          src={logo}
-          alt="logo"
-          className="w-[106px] h-[117px] border-2 border-blue-700 mt-7"
-        />
+    <div className="w-full  flex items-center justify-evenly relative top-0">
+      <div className="flex justify-center items-center">
+        <img src={logo} alt="logo" className="w-[106px] h-[117px] mt-7" />
         <p className="text-[32px] text-white text-center leading-8 zcool-kuaile-regular">
           Saviour
         </p>
