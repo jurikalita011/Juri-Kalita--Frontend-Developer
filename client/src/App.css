@@ -1,0 +1,22 @@
+@import "./index.css";
+.App {
+  text-align: center;
+}
+
+.top-bg {
+  background-image: url("./assets/top-bg.svg");
+}
+
+.zcool-kuaile-regular {
+  font-family: "ZCOOL KuaiLe";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+
+.shojumaru-regular {
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+}
