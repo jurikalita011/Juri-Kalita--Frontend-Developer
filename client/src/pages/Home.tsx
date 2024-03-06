@@ -3,6 +3,7 @@ import { TopSection } from "../components/TopSection";
 import { Introduction } from "../components/Introduction";
 import { IdoEvent } from "../components/IdoEvent";
 import { Tokenomics } from "../components/Tokenomics";
+import { Roadmap } from "../components/Roadmap";
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
       <Introduction />
       <IdoEvent />
       <Tokenomics />
+      <Roadmap />
     </div>
   );
 };

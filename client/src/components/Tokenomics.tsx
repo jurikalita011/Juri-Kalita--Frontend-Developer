@@ -33,9 +33,9 @@ export const Tokenomics = () => {
             );
           })}
         </div>
+        {/* right side */}
         <img className="w-[60%]" src={shield} alt="shield" />
       </div>
-      {/* right side */}
     </div>
   );
 };

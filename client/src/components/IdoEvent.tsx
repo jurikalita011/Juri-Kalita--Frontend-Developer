@@ -14,7 +14,7 @@ export const IdoEvent = () => {
   };
 
   return (
-    <div className="w-full h-[1145px] ido-bg border-2 border-green-500 flex justify-center items-center relative">
+    <div className="w-full h-[1145px] ido-bg flex justify-center items-center relative">
       <div className="w-[95%] flex flex-col gap-14 justify-center items-center absolute top-12">
         <p className="w-[54.4%] text-[41px] leading-[54px] text-center text-[#ED0137] shojumaru-regular">
           Participate in our IDO Event!
