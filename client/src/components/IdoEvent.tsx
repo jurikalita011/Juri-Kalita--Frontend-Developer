@@ -1,4 +1,5 @@
 import copy from "../assets/copy.svg";
+import idoTimer from "../assets/ido-timer.svg";
 export const IdoEvent = () => {
   const tokenInfo = {
     tokens: [
@@ -14,13 +15,13 @@ export const IdoEvent = () => {
 
   return (
     <div className="w-full h-[1145px] ido-bg border-2 border-green-500 flex justify-center items-center relative">
-      <div className="w-[95%] flex flex-col gap-14 justify-center items-center border-2 border-violet-500 absolute top-12">
-        <p className="w-[54.4%] text-[41px] leading-[54px] text-center text-[#ED0137] shojumaru-regular border-2 border-yellow-500">
+      <div className="w-[95%] flex flex-col gap-14 justify-center items-center absolute top-12">
+        <p className="w-[54.4%] text-[41px] leading-[54px] text-center text-[#ED0137] shojumaru-regular">
           Participate in our IDO Event!
         </p>
-        <div className="w-[95%] flex flex-row justify-between items-center border-2 border-brown-500">
+        <div className="w-[95%] flex flex-row justify-between items-center">
           {/* left side */}
-          <div className="w-[40%] flex flex-col justify-center items-center gap-10 border-2 border-yellow-500 relative">
+          <div className="w-[40%] flex flex-col justify-center items-center gap-10  relative">
             <p className="text-[#E6E3E3] text-[21px] leading-[37px] text-center zcool-kuaile-regular">
               During our IDO event, you will gain early access to our
               revolutionary ecosystem, designed to empower everyone to share
@@ -89,8 +90,54 @@ export const IdoEvent = () => {
           </div>
 
           {/* right side */}
-          <div className="text-[#E6E3E3] text-[21px] leading-[37px] text-center zcool-kuaile-regular border-2 cyan-yellow-500">
-            ndsndn
+          <div className="w-[50%] border-2 border-[#DA0909] rounded-[20px] flex flex-col justify-center items-center gap-8 relative pt-16 pb-10">
+            <img src={idoTimer} alt="timer" className="absolute top-[-47px]" />
+            <p className="text-[#ED0137] text-[48px] leading-[64px] text-center shojumaru-regular">
+              PRESALE 1
+            </p>
+            <div className="flex flex-col gap-8 w-[70%]">
+              <p className="w-full text-[#F5F1F1] text-[32px] leading-8 text-center zcool-kuaile-regular">
+                1 Saviour = 0.657 USDT
+              </p>
+              <p className="w-full text-[#F0F0F0] text-[24px] leading-6 text-center zcool-kuaile-regular">
+                Next Stage Price = 0.723 USDT
+              </p>
+              <p className="w-full text-[#F0F0F0] text-[24px] leading-6 text-center zcool-kuaile-regular">
+                Sold - $34,56,56,764/$50,00,00,000
+              </p>
+              <p className="w-full text-[#F0F0F0] text-[24px] leading-6 text-center zcool-kuaile-regular">
+                Raised - $34,56,56,764/$40,00,00,000
+              </p>
+              <input
+                type="text"
+                className="w-full p-4 rounded-[20px] bg-black text-[#EDEBEB] zcool-kuaile-regular text-[16px] text-left leading-4 border-2 border-red-600"
+                placeholder="Enter the amount (BNB)"
+              />
+              <input
+                type="text"
+                className="w-full p-4 rounded-[20px] bg-black text-[#EDEBEB] zcool-kuaile-regular text-[16px] text-left leading-4 border-2 border-red-600"
+                placeholder="Minimum Quantity to Buy"
+              />
+              <input
+                type="text"
+                className="w-full p-4 rounded-[20px] bg-black text-[#EDEBEB] zcool-kuaile-regular text-[16px] text-left leading-4 border-2 border-red-600"
+                placeholder="Maximum Quantity of Tokens"
+              />
+            </div>
+            {/* buttons */}
+
+            <div className="flex justify-center items-center gap-4">
+              <button className="w-[50%] h-[3rem] py-[14px] px-[22px] rounded-2xl bg-gradient-to-r from-[#D51B46] to-[#EE6910]">
+                <p className="text-[#FFFFFF] text-center text-[17px] leading-[17px] zcool-kuaile-regular">
+                  Buy
+                </p>
+              </button>
+              <button className="w-full h-[3rem] py-[10px] px-4 rounded-2xl bg-gradient-to-r from-[#ED0137] to-[#F05733]">
+                <p className="text-[#FFFFFF] text-center font-semibold leading-[18px] tracking-normal">
+                  Claim Drop
+                </p>
+              </button>
+            </div>
           </div>
         </div>
       </div>
