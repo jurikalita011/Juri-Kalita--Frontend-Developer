@@ -12,7 +12,7 @@ export const Footer = () => {
         SITEMAP
       </p>
 
-      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-0 md:flex-row md:w-full">
+      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-6 md:flex-row md:w-full">
         <div className="flex flex-wrap justify-center items-center gap-8">
           <p className="leading-5 text-[1rem] font-semibold poppins text-white">
             Home
