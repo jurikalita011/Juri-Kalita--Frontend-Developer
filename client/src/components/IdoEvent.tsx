@@ -1,5 +1,6 @@
 import copy from "../assets/copy.svg";
 import idoTimer from "../assets/ido-timer.svg";
+import { useComponentVisible } from "../custom-hooks/UseComponentVisible";
 
 export const IdoEvent = () => {
   const tokenInfo = {
@@ -14,8 +15,19 @@ export const IdoEvent = () => {
     ],
   };
 
+  const { componentRef, isVisible } = useComponentVisible();
+
+  const transitionStyles = {
+    transition: "opacity 0.5s ease-in-out",
+    opacity: isVisible ? 1 : 0,
+  };
+
   return (
-    <div className="w-full h-[71.5625rem] ido-bg flex justify-center items-center relative my-8 lg:my-0">
+    <div
+      ref={componentRef}
+      style={{ ...transitionStyles }}
+      className="w-full h-[71.5625rem] ido-bg flex justify-center items-center relative my-8 lg:my-0"
+    >
       <div className="w-[95%] flex flex-col gap-6 lg:gap-14 justify-center items-center absolute top-12">
         <p className="w-[80%] lg:w-[54.4%] text-[1.75rem] lg:text-[2.5625rem] leading-[2.31rem] lg:leading-[3.375rem] text-center text-[#ED0137] shojumaru-regular">
           Participate in our IDO Event!

@@ -1,5 +1,6 @@
 import React from "react";
 import shield from "../assets/shield-tokenomics.svg";
+import { useComponentVisible } from "../custom-hooks/UseComponentVisible";
 export const Tokenomics = () => {
   const tokenDetails = [
     { title: "Name", value: "Saviour" },
@@ -7,8 +8,20 @@ export const Tokenomics = () => {
     { title: "Total Supply", value: "1000 Trillion" },
     { title: "Decimals", value: "18" },
   ];
+
+  const { componentRef, isVisible } = useComponentVisible();
+
+  const transitionStyles = {
+    transition: "opacity 0.5s ease-in-out",
+    opacity: isVisible ? 1 : 0,
+  };
+
   return (
-    <div className="w-full flex flex-col gap-14 justify-center items-center tokenomics-bg mt-10 lg:mt-0">
+    <div
+      ref={componentRef}
+      style={{ ...transitionStyles }}
+      className="w-full flex flex-col gap-14 justify-center items-center tokenomics-bg mt-10 lg:mt-0"
+    >
       <p className="text-[#ED0137] text-[2rem] lg:text-[2.75rem] leading-[2.38rem] lg:leading-[3.25rem] text-center shojumaru-regular">
         Tokenomics
       </p>

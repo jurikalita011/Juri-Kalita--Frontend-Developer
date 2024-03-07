@@ -2,10 +2,21 @@ import React from "react";
 
 import arrowDown from "../assets/arrow-down.svg";
 import img from "../assets/intro-img.svg";
+import { useComponentVisible } from "../custom-hooks/UseComponentVisible";
 
 export const Introduction = () => {
+  const { componentRef, isVisible } = useComponentVisible();
+
+  const transitionStyles = {
+    transition: "opacity 0.5s ease-in-out",
+    opacity: isVisible ? 1 : 0,
+  };
   return (
-    <div className="flex flex-wrap justify-center items-center w-[80%] ">
+    <div
+      ref={componentRef}
+      style={{ ...transitionStyles }}
+      className="flex flex-wrap justify-center items-center w-[80%] "
+    >
       {/* Left side content */}
       <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-8">
         <p className="text-[#ED0137] text-[2rem] md:text-[2rem] lg:text-[2.75rem] leading-[3.2725rem] shojumaru-regular">
@@ -25,7 +36,7 @@ export const Introduction = () => {
           <span className="text-slate-400">read more...</span>
         </p>
 
-        <button className="w-[50%] md:w-[30%] lg:w-[25%] h-[1.5rem] md:h-[2rem]  lg:h-[2.375rem] py-[17px] px-[21px] rounded-[22px] bg-gradient-to-r from-[#D51B46] to-[#EE6910] flex items-center justify-center gap-2">
+        <button className="w-[50%] md:w-[30%] lg:w-[29%] h-[1.5rem] md:h-[2rem]  lg:h-[2.375rem] py-[17px] px-[21px] rounded-[22px] bg-gradient-to-r from-[#D51B46] to-[#EE6910] flex items-center justify-center gap-2">
           <p className="text-[#FFFFFF] text-center leading-[1.25rem] text-[1.25rem] zcool-kuaile-regular ">
             Documents
           </p>

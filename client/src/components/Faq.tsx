@@ -1,9 +1,20 @@
 import React from "react";
 import shield from "../assets/shield-faq.svg";
 import arrowDown from "../assets/arrow-down-faq.svg";
+import { useComponentVisible } from "../custom-hooks/UseComponentVisible";
 export const Faq = () => {
+  const { componentRef, isVisible } = useComponentVisible();
+
+  const transitionStyles = {
+    transition: "opacity 0.5s ease-in-out",
+    opacity: isVisible ? 1 : 0,
+  };
   return (
-    <div className="w-full flex justify-center items-center my-2">
+    <div
+      ref={componentRef}
+      style={{ ...transitionStyles }}
+      className="w-full flex justify-center items-center my-2"
+    >
       <div className="w-[80%] flex flex-col lg:flex-row justify-between items-center">
         <img src={shield} alt="shield" className="hidden lg:block" />
         <div className="w-full flex flex-col gap-5 lg:gap-8 justify-center items-center">

@@ -3,9 +3,7 @@
   text-align: center;
 }
 
-.top-bg {
-  background-image: url("./assets/top-bg.svg");
-}
+/*-----------------------------------------------------------X------fonts------X--------------------------------------------------------------------------------*/
 
 .zcool-kuaile-regular {
   font-family: "ZCOOL KuaiLe";
@@ -21,6 +19,14 @@
   letter-spacing: 0em;
 }
 
+.poppins {
+  font-family: "Poppins";
+  font-style: normal;
+}
+/*-----------------------------------------------------------X------bg------X--------------------------------------------------------------------------------*/
+.top-bg {
+  background-image: url("./assets/top-bg.svg");
+}
 .ido-bg {
   background-image: url("./assets/ido-bg.svg");
 }
@@ -33,7 +39,7 @@
   background-image: url("./assets/roadmap-bg.svg");
 }
 
-.poppins {
-  font-family: "Poppins";
-  font-style: normal;
+.phase-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
