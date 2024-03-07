@@ -111,7 +111,7 @@ export const IdoEvent = () => {
             <p className="text-[#E6E3E3] lg:text-[#ED0137] text-[1.5rem] lg:text-[3rem] leading-[1.97rem] lg:leading-[4rem] text-center shojumaru-regular">
               PRESALE 1
             </p>
-            <div className="flex flex-col gap-4 lg:gap-8 w-full lg:w-[70%]">
+            <div className="flex flex-col gap-4 lg:gap-6 w-full lg:w-[70%]">
               <p className="w-full text-[#C50D0D] lg:text-[#F5F1F1] text-[1rem] lg:text-[1.5rem] leading-[1rem] lg:leading-8 text-center zcool-kuaile-regular">
                 1 Saviour = 0.657 USDT
               </p>
