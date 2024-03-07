@@ -13,7 +13,7 @@ export const TopSection = () => {
     <div
       ref={componentRef}
       style={{ ...transitionStyles }}
-      className="w-full h-[36.75rem] top-bg"
+      className="w-full h-[36rem] md:h-[38rem] lg:h-[36.75rem] top-bg"
     >
       <Navbar />
       <div className="flex justify-center items-center absolute">
