@@ -24,3 +24,16 @@
 .ido-bg {
   background-image: url("./assets/ido-bg.svg");
 }
+
+.tokenomics-bg {
+  background-image: url("./assets/tokenomics-bg.svg");
+}
+
+.roadmap-bg {
+  background-image: url("./assets/roadmap-bg.svg");
+}
+
+.poppins {
+  font-family: "Poppins";
+  font-style: normal;
+}

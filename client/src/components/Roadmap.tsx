@@ -5,11 +5,11 @@ import phase3 from "../assets/phase3.svg";
 import phase4 from "../assets/phase4.svg";
 export const Roadmap = () => {
   return (
-    <div className="w-full roadmap-bg flex flex-col gap-16 py-16 justify-center items-center border-2 border-green-200">
-      <p className="text-[#ED0137] text-[44px] leading-[52px] shojumaru-regular border-2 border-red-200">
+    <div className="w-full roadmap-bg flex flex-col gap-16 py-16 justify-center items-center">
+      <p className="text-[#ED0137] text-[2.75rem] leading-[3.25rem] shojumaru-regular">
         ROAD MAP
       </p>
-      <div className="w-[77%] grid grid-cols-4 place-items-center gap-4 border-2 border-cyan-200">
+      <div className="w-[77%] grid grid-cols-4 place-items-center gap-4">
         <img src={phase1} alt="phase1" />
         <img src={phase2} alt="phase2" />
         <img src={phase3} alt="phase3" />
