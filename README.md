@@ -37,10 +37,10 @@ Frontend
 ├─ package.json
 ```
 ## Video Walkthrough of the project
-[Project-preview]()
+[Project-preview](https://drive.google.com/file/d/12pia-_PBR8eNRkCnRIvLgU30t4InHLSH/view?usp=sharing)
 ## Features
 * Implementation of WalletConnect functionality to allow users to connect their wallets.
-* UI built based on the provided Figma design to enhance the user experience using various animations along with different screen responsiveness.
+* UI built based on the provided Figma design to enhance the user experience using various animations and screen responsiveness.
 ## Design Decisions or Assumptions
 * WalletConnect functionality is integrated using the provided WalletConnect tool.
 
@@ -66,7 +66,7 @@ To set up the project on your local system, follow these steps:
 The app will be running on `http://localhost:3000/`.
 
 ## Usage
-After starting the project, access the frontend application through your web browser. You can connect your wallet using the WalletConnect functionality.
+After starting the project, you can access the frontend application through your web browser. You can connect your wallet using the WalletConnect functionality.
 ### Large Screen
 ![savior-lg](https://github.com/jurikalita011/Juri-Kalita--Frontend-Developer/assets/68116821/4e926f62-0ac2-490a-ac19-669ac0d70a12)
  
