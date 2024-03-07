@@ -20,9 +20,12 @@ export const Tokenomics = () => {
               Token Details
             </p>
           </div>
-          {tokenDetails?.map((token) => {
+          {tokenDetails?.map((token, ind) => {
             return (
-              <div className="w-[87%] lg:w-[70%] flex justify-between items-center">
+              <div
+                className="w-[87%] lg:w-[70%] flex justify-between items-center"
+                key={ind}
+              >
                 <p className="text-[1.05rem] lg:text-[1.25rem] leading-[1.05rem] lg:leading-[1.25rem] text-white text-left zcool-kuaile-regular">
                   {token.title}
                 </p>

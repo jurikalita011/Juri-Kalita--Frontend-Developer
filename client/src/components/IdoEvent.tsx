@@ -15,7 +15,7 @@ export const IdoEvent = () => {
   };
 
   return (
-    <div className="w-full h-[71.5625rem] ido-bg flex justify-center items-center relative">
+    <div className="w-full h-[71.5625rem] ido-bg flex justify-center items-center relative my-8 lg:my-0">
       <div className="w-[95%] flex flex-col gap-6 lg:gap-14 justify-center items-center absolute top-12">
         <p className="w-[80%] lg:w-[54.4%] text-[1.75rem] lg:text-[2.5625rem] leading-[2.31rem] lg:leading-[3.375rem] text-center text-[#ED0137] shojumaru-regular">
           Participate in our IDO Event!
@@ -65,13 +65,13 @@ export const IdoEvent = () => {
                 );
               })}
 
-              <div className="w-[50%] lg:w-[40%] h-[2rem] lg:h-[4rem] bg-[#ED0137] rounded-[20px] flex items-center justify-center absolute top-[141px] lg:top-[120px] left-[26%] h:left-[31%]">
+              <div className="w-[50%] md:w-[30%] lg:w-[40%] h-[2rem] lg:h-[4rem] bg-[#ED0137] rounded-[20px] flex items-center justify-center absolute top-[141px] md:top-[3.7rem] lg:top-[120px] left-[26%] md:left-[14rem] lg:left-[31%]">
                 <p className="text-[1rem] lg:text-[1.125rem] leading-[1.32rem] lg:leading-[1.5rem] text-white shojumaru-regular">
                   Token Info
                 </p>
               </div>
             </div>
-            <button className="w-[45%] lg:w-[27%] h-[38px] py-[12.6px] px-4 rounded-2xl bg-gradient-to-r from-[#D51B46] to-[#EE6910]">
+            <button className="w-[45%] md:w-[30%] lg:w-[27%] h-[38px] py-[12.6px] px-4 rounded-2xl bg-gradient-to-r from-[#D51B46] to-[#EE6910]">
               <p className="text-[#FFFFFF] text-center text-[0.783rem] lg:text-[0.875rem] leading-[1.175rem] lg:leading-[0.875rem] zcool-kuaile-regular">
                 Connect Wallet
               </p>
@@ -87,9 +87,13 @@ export const IdoEvent = () => {
                   className="w-[90%] lg:w-[80%] p-2 lg:p-4 rounded-[20px] bg-black text-[#EDEBEB] zcool-kuaile-regular text-[0.64rem] lg:text-[1rem] text-left leading-[0.64rem] lg:leading-4 border-2 border-red-600"
                   placeholder="Generate a unique referral link"
                 />
-                <img src={copy} alt="copy" className="w-[10%] lg:w-[10%]" />
+                <img
+                  src={copy}
+                  alt="copy"
+                  className="w-[10%] md:w-[6%] lg:w-[10%]"
+                />
               </div>
-              <button className="bg-[#ED0137] p-1 lg:p-3 rounded-[20px] absolute top-[0.35rem] lg:top-1.5 right-[2.7rem] lg:right-[5.5rem]">
+              <button className="bg-[#ED0137] p-1 md:p-1.5 lg:p-3 rounded-[20px] absolute top-[0.35rem] md:top-2 lg:top-1.5 right-[2.7rem] md:right-[3.8rem] lg:right-[5.5rem]">
                 <p className="text-white text-[0.6rem] lg:text-[0.93rem] leading-[0.6rem] lg:leading-[0.93rem] text-center zcool-kuaile-regular">
                   Generate
                 </p>
@@ -98,11 +102,11 @@ export const IdoEvent = () => {
           </div>
 
           {/* right side */}
-          <div className="w-[98%] mt-4 lg:w-[50%] border-2 border-[#DA0909] rounded-[20px] flex flex-col justify-center items-center gap-4 lg:gap-8 relative pt-2 lg:pt-16 pb-2 lg:pb-10">
+          <div className="w-[98%] mt-8 py-6 md:py-6 lg:py-6 lg:w-[50%] border-2 border-[#DA0909] rounded-[20px] flex flex-col justify-center items-center gap-4 lg:gap-8 relative pt-2 lg:pt-16 pb-2 lg:pb-10">
             <img
               src={idoTimer}
               alt="timer"
-              className="w-[20%] absolute top-[-0.8rem] lg:top-[-1.6rem]"
+              className="w-[20%] absolute top-[-0.8rem] md:top-[-1.6rem] lg:top-[-1.6rem]"
             />
             <p className="text-[#E6E3E3] lg:text-[#ED0137] text-[1.5rem] lg:text-[3rem] leading-[1.97rem] lg:leading-[4rem] text-center shojumaru-regular">
               PRESALE 1
