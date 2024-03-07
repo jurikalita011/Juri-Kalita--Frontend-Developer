@@ -2,6 +2,8 @@ import React from "react";
 import logo from "../assets/top-logo.svg";
 import arrowDown from "../assets/arrow-down.svg";
 import menuIcon from "../assets/burger-menu.svg";
+import { WalletConnectionButton } from "./ConnectWallet";
+
 export const Navbar = () => {
   return (
     <div className="w-full  flex items-center justify-evenly relative">
@@ -42,11 +44,7 @@ export const Navbar = () => {
           <img src={arrowDown} alt="down arrow" />
         </div>
       </div>
-      <button className="w-[25%] md:w-[20%] lg:w-[11%] h-[2rem] lg:h-[3rem] py-0 lg:py-[10px] px-0 lg:px-4 rounded-2xl bg-gradient-to-r from-[#ED0137] to-[#F05733]">
-        <p className="text-[#FFFFFF] text-center font-semibold poppins text-[0.6rem] lg:text-[0.75rem] leading-[0.8rem] lg:leading-[1.125rem] tracking-normal">
-          Connect Wallet
-        </p>
-      </button>
+      <WalletConnectionButton />
     </div>
   );
 };
