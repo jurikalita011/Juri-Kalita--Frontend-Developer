@@ -8,12 +8,12 @@ export const Introduction = () => {
     <div className="flex flex-wrap justify-center items-center w-[80%] ">
       {/* Left side content */}
       <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-8">
-        <p className="text-[#ED0137] lg:text-[2.75rem] leading-[3.2725rem] shojumaru-regular">
+        <p className="text-[#ED0137] text-[2rem] md:text-[2rem] lg:text-[2.75rem] leading-[3.2725rem] shojumaru-regular">
           Introduction
         </p>
         {/* On small screens, display image below heading */}
         <img src={img} alt="Intro" className="w-full lg:hidden" />
-        <p className="text-[#FFFCFD] lg:text-2xl zcool-kuaile-regular">
+        <p className="text-[#FFFCFD] text-center lg:text-left text-base md:text-3xl lg:text-2xl zcool-kuaile-regular">
           We've all been in the mud once, and now we've decided to fight it out.
           <br />
           Pay tribute to those pioneers of WEB3 and the warriors who dedicated
@@ -25,7 +25,7 @@ export const Introduction = () => {
           <span className="text-slate-400">read more...</span>
         </p>
 
-        <button className="w-[25%] h-[2.375rem] py-[17px] px-[21px] rounded-[22px] bg-gradient-to-r from-[#D51B46] to-[#EE6910] flex items-center justify-center gap-2">
+        <button className="w-[50%] md:w-[50%] lg:w-[25%] h-[1.5rem] md:h-[2rem]  lg:h-[2.375rem] py-[17px] px-[21px] rounded-[22px] bg-gradient-to-r from-[#D51B46] to-[#EE6910] flex items-center justify-center gap-2">
           <p className="text-[#FFFFFF] text-center leading-[1.25rem] text-[1.25rem] zcool-kuaile-regular ">
             Documents
           </p>
