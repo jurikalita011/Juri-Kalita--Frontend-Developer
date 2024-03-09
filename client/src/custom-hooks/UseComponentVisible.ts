@@ -8,9 +8,8 @@ export const useComponentVisible = () => {
     const handleScroll = () => {
       if (componentRef.current) {
         const rect = componentRef.current.getBoundingClientRect();
-        const isInView =
-          rect.top <= window.innerHeight / 2 &&
-          rect.bottom >= window.innerHeight / 2;
+        const isInView = rect.top <= window.innerHeight / 2;
+        // rect.bottom >= window.innerHeight / 2;
         setIsVisible(isInView);
       }
     };

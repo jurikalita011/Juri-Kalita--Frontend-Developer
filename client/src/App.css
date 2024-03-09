@@ -43,3 +43,45 @@
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
+/*--------------------------------------------------------X-----animation-----X--------------------------------------------------------------------------------*/
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.right-move {
+  animation: moveRight 2s ease-in-out;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(30%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.left-move {
+  animation: moveLeft 2s ease-in-out;
+}
+
+@keyframes floatAnimationLogo {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
+}
+
+.float {
+  animation: floatAnimationLogo 3s infinite alternate;
+}

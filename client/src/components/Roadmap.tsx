@@ -9,16 +9,14 @@ export const Roadmap = () => {
   const images = [phase1, phase2, phase3, phase4];
   const { componentRef, isVisible } = useComponentVisible();
 
-  const transitionStyles = {
-    transition: "opacity 0.5s ease-in-out",
-    opacity: isVisible ? 1 : 0,
-  };
-
   return (
     <div
       ref={componentRef}
-      style={{ ...transitionStyles }}
-      className="w-full roadmap-bg flex flex-col gap-16 py-16 justify-center items-center"
+      className={
+        isVisible
+          ? "w-full roadmap-bg opacity-100 transition-opacity duration-500 ease-in-out flex flex-col gap-16 py-16 justify-center items-center"
+          : "w-full roadmap-bg flex flex-col gap-16 py-16 justify-center items-center opacity-0"
+      }
     >
       <p className="text-[#ED0137] text-[2rem] lg:text-[2.75rem] leading-[2.38rem] lg:leading-[3.25rem] shojumaru-regular">
         ROAD MAP

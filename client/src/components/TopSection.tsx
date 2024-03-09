@@ -5,15 +5,14 @@ import { useComponentVisible } from "../custom-hooks/UseComponentVisible";
 export const TopSection = () => {
   const { componentRef, isVisible } = useComponentVisible();
 
-  const transitionStyles = {
-    transition: "opacity 0.5s ease-in-out",
-    opacity: isVisible ? 1 : 0,
-  };
   return (
     <div
       ref={componentRef}
-      style={{ ...transitionStyles }}
-      className="w-full h-[36rem] md:h-[38rem] lg:h-[36.75rem] top-bg"
+      className={
+        isVisible
+          ? "w-full h-[36.75rem] top-bg opacity-100 transition-opacity duration-500 ease-in-out"
+          : "w-full h-[36.75rem] top-bg opacity-0"
+      }
     >
       <Navbar />
       <div className="flex justify-center items-center absolute">

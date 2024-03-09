@@ -8,15 +8,14 @@ import { useComponentVisible } from "../custom-hooks/UseComponentVisible";
 export const Footer = () => {
   const { componentRef, isVisible } = useComponentVisible();
 
-  const transitionStyles = {
-    transition: "opacity 0.5s ease-in-out",
-    opacity: isVisible ? 1 : 0,
-  };
   return (
     <div
       ref={componentRef}
-      style={{ ...transitionStyles }}
-      className="w-full flex flex-col justify-center items-center gap-10 py-10"
+      className={
+        isVisible
+          ? "w-full flex flex-col justify-center items-center gap-10 py-10 opacity-100 transition-opacity duration-500 ease-in-out"
+          : "w-full flex flex-col justify-center items-center gap-10 py-10 opacity-0"
+      }
     >
       <img
         src={logo}

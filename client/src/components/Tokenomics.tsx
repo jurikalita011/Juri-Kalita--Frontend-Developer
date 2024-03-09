@@ -11,16 +11,14 @@ export const Tokenomics = () => {
 
   const { componentRef, isVisible } = useComponentVisible();
 
-  const transitionStyles = {
-    transition: "opacity 0.5s ease-in-out",
-    opacity: isVisible ? 1 : 0,
-  };
-
   return (
     <div
       ref={componentRef}
-      style={{ ...transitionStyles }}
-      className="w-full flex flex-col gap-14 justify-center items-center tokenomics-bg mt-10 lg:mt-0"
+      className={
+        isVisible
+          ? "w-full flex flex-col gap-14 justify-center items-center tokenomics-bg mt-[5rem] md:mt-0 lg:mt-0 opacity-100 transition-opacity duration-500 ease-in-out"
+          : "opacity-0 w-full flex flex-col gap-14 justify-center items-center tokenomics-bg"
+      }
     >
       <p className="text-[#ED0137] text-[2rem] lg:text-[2.75rem] leading-[2.38rem] lg:leading-[3.25rem] text-center shojumaru-regular">
         Tokenomics
@@ -29,7 +27,7 @@ export const Tokenomics = () => {
         {/* left side */}
         <div className="w-[90%] lg:w-[35%] flex flex-col gap-6 justify-between items-center rounded-[20px] border-2 border-[#DA0909] pt-[80px] pb-[60px] relative">
           <div className="w-[70%] lg:w-[50%] h-[3rem] lg:h-[4rem] bg-[#ED0137] rounded-[20px] flex items-center justify-center absolute top-[-1.5rem] lg:top-[-2rem]">
-            <p className="text-[1.125rem] leading-6 text-white shojumaru-regular">
+            <p className="text-[1.125rem] leading-6 text-center text-white shojumaru-regular">
               Token Details
             </p>
           </div>
@@ -42,7 +40,7 @@ export const Tokenomics = () => {
                 <p className="text-[1.05rem] lg:text-[1.25rem] leading-[1.05rem] lg:leading-[1.25rem] text-white text-left zcool-kuaile-regular">
                   {token.title}
                 </p>
-                <p className="text-[#DF180A] text-[1.05rem] lg:text-[1.25rem] leading-[1.05rem] lg:leading-[1.25rem] text-left zcool-kuaile-regular">
+                <p className="text-[#DF180A] text-[1.05rem] lg:text-[1.25rem] leading-[1.05rem] lg:leading-[1.25rem] text-right zcool-kuaile-regular">
                   {token.value}
                 </p>
               </div>

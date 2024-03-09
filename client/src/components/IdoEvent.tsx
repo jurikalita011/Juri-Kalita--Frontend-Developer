@@ -17,16 +17,14 @@ export const IdoEvent = () => {
 
   const { componentRef, isVisible } = useComponentVisible();
 
-  const transitionStyles = {
-    transition: "opacity 0.5s ease-in-out",
-    opacity: isVisible ? 1 : 0,
-  };
-
   return (
     <div
       ref={componentRef}
-      style={{ ...transitionStyles }}
-      className="w-full h-[71.5625rem] ido-bg flex justify-center items-center relative my-8 lg:my-0"
+      className={
+        isVisible
+          ? "w-full h-[78rem] ido-bg flex justify-center items-center relative my-8 lg:my-0 opacity-100 transition-opacity duration-500 ease-in-out"
+          : "w-full h-[78rem] ido-bg flex justify-center items-center relative my-8 lg:my-0 opacity-0"
+      }
     >
       <div className="w-[95%] flex flex-col gap-6 lg:gap-14 justify-center items-center absolute top-12">
         <p className="w-[80%] lg:w-[54.4%] text-[1.75rem] lg:text-[2.5625rem] leading-[2.31rem] lg:leading-[3.375rem] text-center text-[#ED0137] shojumaru-regular">
@@ -34,13 +32,19 @@ export const IdoEvent = () => {
         </p>
         <div className="w-[95%] flex flex-col lg:flex-row justify-between items-center">
           {/* left side */}
-          <div className="w-[90%] lg:w-[40%] flex flex-col justify-center items-center gap-3 lg:gap-10  relative">
+          <div className="w-[95%] md:[90%] lg:w-[40%] flex flex-col justify-center items-center gap-3 lg:gap-10  ">
             <p className="text-[#E6E3E3] text-[1rem] lg:text-[1.3125rem] leading-[1.84rem] lg:leading-[2.3125rem] text-center zcool-kuaile-regular">
               During our IDO event, you will gain early access to our
               revolutionary ecosystem, designed to empower everyone to share
               wealth and achieve success.
             </p>
-            <div className="w-[80%] flex flex-col justify-center items-center gap-6 border-2 pt-16 pb-6 border-[#DA0909] rounded-2xl ">
+            <div
+              className={
+                isVisible
+                  ? "right-move w-full md:[80%] lg:w-[80%] flex flex-col justify-center items-center gap-6 border-2 pt-16 pb-6 border-[#DA0909] rounded-2xl relative"
+                  : "w-full md:[80%] lg:w-[80%] flex flex-col justify-center items-center gap-6 border-2 pt-16 pb-6 border-[#DA0909] rounded-2xl relative"
+              }
+            >
               {tokenInfo?.tokens?.map((info, ind) => {
                 return (
                   <div
@@ -77,14 +81,14 @@ export const IdoEvent = () => {
                 );
               })}
 
-              <div className="w-[50%] md:w-[30%] lg:w-[40%] h-[2rem] lg:h-[4rem] bg-[#ED0137] rounded-[20px] flex items-center justify-center absolute top-[141px] md:top-[3.7rem] lg:top-[120px] left-[26%] md:left-[14rem] lg:left-[31%]">
-                <p className="text-[1rem] lg:text-[1.125rem] leading-[1.32rem] lg:leading-[1.5rem] text-white shojumaru-regular">
+              <div className="max-[400px]:w-[60%] sm:w-[40%] md:w-[27%] lg:w-[43%] h-[2.5rem] md:h-[3rem] lg:h-[4rem] bg-[#ED0137] rounded-[20px] flex items-center justify-center absolute top-[-1rem] md:top-[-1rem] lg:top-[-2rem] sm:left-[30%] md:left-[36%] lg:left-[31%]">
+                <p className="text-[1rem] md:text-[1rem] lg:text-[1.125rem] leading-[1.32rem] lg:leading-[1.5rem] text-center text-white shojumaru-regular">
                   Token Info
                 </p>
               </div>
             </div>
-            <button className="w-[45%] md:w-[30%] lg:w-[27%] h-[38px] py-[12.6px] px-4 rounded-2xl bg-gradient-to-r from-[#D51B46] to-[#EE6910]">
-              <p className="text-[#FFFFFF] text-center text-[0.783rem] lg:text-[0.875rem] leading-[1.175rem] lg:leading-[0.875rem] zcool-kuaile-regular">
+            <button className="sm:w-[30%] md:w-[26%] lg:w-[36%] h-[38px] py-[12.6px] px-4 rounded-2xl bg-gradient-to-r from-[#D51B46] to-[#EE6910]">
+              <p className="text-[#FFFFFF] text-center max-[178px]:text-[0.5rem] sm:text-[0.7rem] md:text-[0.9rem] lg:text-[0.875rem] leading-[1.175rem] lg:leading-[0.875rem] zcool-kuaile-regular">
                 Connect Wallet
               </p>
             </button>
@@ -105,7 +109,7 @@ export const IdoEvent = () => {
                   className="w-[10%] md:w-[6%] lg:w-[10%]"
                 />
               </div>
-              <button className="bg-[#ED0137] p-1 md:p-1.5 lg:p-3 rounded-[20px] absolute top-[0.35rem] md:top-2 lg:top-1.5 right-[2.7rem] md:right-[3.8rem] lg:right-[5.5rem]">
+              <button className="bg-[#ED0137] p-1 md:p-1.5 lg:p-3 rounded-[20px] absolute max-sm:top-[20%] sm:top-[35%] sm:right-[13%] max-sm:right-[14%] lg:top-[12%] md:top-[29%] md:right-[9%] lg:right-[17%]">
                 <p className="text-white text-[0.6rem] lg:text-[0.93rem] leading-[0.6rem] lg:leading-[0.93rem] text-center zcool-kuaile-regular">
                   Generate
                 </p>
@@ -114,11 +118,17 @@ export const IdoEvent = () => {
           </div>
 
           {/* right side */}
-          <div className="w-[98%] mt-8 py-6 md:py-6 lg:py-6 lg:w-[50%] border-2 border-[#DA0909] rounded-[20px] flex flex-col justify-center items-center gap-4 lg:gap-8 relative pt-2 lg:pt-16 pb-2 lg:pb-10">
+          <div
+            className={
+              isVisible
+                ? "left-move w-[98%] mt-8 py-6 md:py-6 lg:py-6 lg:w-[50%] border-2 border-[#DA0909] rounded-[20px] flex flex-col justify-center items-center gap-4 lg:gap-8 relative pt-2 lg:pt-16 pb-2 lg:pb-10"
+                : "w-[98%] mt-8 py-6 md:py-6 lg:py-6 lg:w-[50%] border-2 border-[#DA0909] rounded-[20px] flex flex-col justify-center items-center gap-4 lg:gap-8 relative pt-2 lg:pt-16 pb-2 lg:pb-10"
+            }
+          >
             <img
               src={idoTimer}
               alt="timer"
-              className="w-[20%] absolute top-[-0.8rem] md:top-[-1.6rem] lg:top-[-1.6rem]"
+              className="w-[20%] absolute max-sm:top-[-0.8rem] sm:top-[-1.6rem] md:top-[-1.8rem] lg:top-[-1.5rem]"
             />
             <p className="text-[#E6E3E3] lg:text-[#ED0137] text-[1.5rem] lg:text-[3rem] leading-[1.97rem] lg:leading-[4rem] text-center shojumaru-regular">
               PRESALE 1
