@@ -1,5 +1,4 @@
 import React from "react";
-
 import arrowDown from "../assets/arrow-down.svg";
 import img from "../assets/intro-img.svg";
 
