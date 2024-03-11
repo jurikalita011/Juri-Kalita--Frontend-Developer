@@ -12,41 +12,23 @@ export const Navbar = () => {
   };
   return (
     <div className="w-full  flex items-center justify-evenly relative">
-      {isMenuOpen ? (
-        <div className="flex items-center relative">
-          {/*burger menu */}
-          <div className="lg:hidden" onClick={toggleMenu}>
-            <img src={menuIcon} alt="menu" />
-          </div>
-          <div className="flex justify-center items-center">
-            <img
-              src={logo}
-              alt="logo"
-              className="w-[3rem] lg:w-[6.625rem] h-[3rem] lg:h-[7.3rem] mt-4 lg:mt-7 cursor-pointer"
-            />
-            <p className="text-base lg:text-[2rem] text-white text-center leading-8 zcool-kuaile-regular cursor-pointer">
-              Saviour
-            </p>
-          </div>
+      <div className="flex items-center relative">
+        {/*burger menu */}
+        <div className="lg:hidden" onClick={toggleMenu}>
+          <img src={menuIcon} alt="menu" />
         </div>
-      ) : (
-        <div className="flex items-center relative">
-          {/*burger menu */}
-          <div className="lg:hidden" onClick={toggleMenu}>
-            <img src={menuIcon} alt="menu" />
-          </div>
-          <div className="flex justify-center items-center">
-            <img
-              src={logo}
-              alt="logo"
-              className="w-[3rem] lg:w-[6.625rem] h-[3rem] lg:h-[7.3rem] mt-4 lg:mt-7 cursor-pointer"
-            />
-            <p className="text-base lg:text-[2rem] text-white text-center leading-8 zcool-kuaile-regular cursor-pointer">
-              Saviour
-            </p>
-          </div>
+        <div className="flex justify-center items-center">
+          <img
+            src={logo}
+            alt="logo"
+            className="w-[3rem] lg:w-[6.625rem] h-[3rem] lg:h-[7.3rem] mt-4 lg:mt-7 cursor-pointer"
+          />
+          <p className="text-base lg:text-[2rem] text-white text-center leading-8 zcool-kuaile-regular cursor-pointer">
+            Saviour
+          </p>
         </div>
-      )}
+      </div>
+
       {/* navigations */}
       {isMenuOpen ? (
         <div className="w-full rounded-[20px] flex flex-col items-left gap-2 bg-[#191818] bg-transparent absolute top-[80%] left-[17%]">
