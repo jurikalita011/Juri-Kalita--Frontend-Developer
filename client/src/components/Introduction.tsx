@@ -2,20 +2,10 @@ import React from "react";
 
 import arrowDown from "../assets/arrow-down.svg";
 import img from "../assets/intro-img.svg";
-import { useComponentVisible } from "../custom-hooks/UseComponentVisible";
 
 export const Introduction = () => {
-  const { componentRef, isVisible } = useComponentVisible();
-
   return (
-    <div
-      ref={componentRef}
-      className={
-        isVisible
-          ? "flex flex-wrap justify-center items-center w-[80%] opacity-100 transition-opacity duration-500 ease-in-out right-move"
-          : "flex flex-wrap justify-center items-center w-[80%] opacity-0"
-      }
-    >
+    <div className="flex flex-wrap justify-center items-center w-[80%]">
       {/* Left side content */}
       <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-8">
         <p className="text-[#ED0137] text-[2rem] md:text-[2rem] lg:text-[2.75rem] leading-[3.2725rem] shojumaru-regular">
