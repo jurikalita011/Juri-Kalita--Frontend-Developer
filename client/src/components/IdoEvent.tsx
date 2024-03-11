@@ -22,8 +22,8 @@ export const IdoEvent = () => {
       ref={componentRef}
       className={
         isVisible
-          ? "w-full h-[78rem] ido-bg flex justify-center items-center relative my-8 lg:my-0 opacity-100 transition-opacity duration-500 ease-in-out"
-          : "w-full h-[78rem] ido-bg flex justify-center items-center relative my-8 lg:my-0 opacity-0"
+          ? "w-full h-[71.56rem] bg-no-repeat bg-cover ido-bg flex justify-center items-center relative my-8 lg:my-0 opacity-100 transition-opacity duration-500 ease-in-out"
+          : "w-full h-[71.56rem] bg-no-repeat bg-cover ido-bg flex justify-center items-center relative my-8 lg:my-0 opacity-0"
       }
     >
       <div className="w-[95%] flex flex-col gap-6 lg:gap-14 justify-center items-center absolute top-12">
@@ -109,7 +109,7 @@ export const IdoEvent = () => {
                   className="w-[10%] md:w-[6%] lg:w-[10%]"
                 />
               </div>
-              <button className="bg-[#ED0137] p-1 md:p-1.5 lg:p-3 rounded-[20px] absolute max-sm:top-[20%] sm:top-[35%] sm:right-[13%] max-sm:right-[14%] lg:top-[12%] md:top-[29%] md:right-[9%] lg:right-[17%]">
+              <button className="bg-[#ED0137] p-1 md:p-1.5 lg:p-3 rounded-[20px] absolute max-sm:top-[20%] sm:top-[35%] md:top-[29%] lg:top-[12%] xl:top-[10%] 2xl:top-[12%] sm:right-[13%] max-sm:right-[14%] md:right-[9%] lg:right-[17%] xl:right-[17%] 2xl:right-[17%]">
                 <p className="text-white text-[0.6rem] lg:text-[0.93rem] leading-[0.6rem] lg:leading-[0.93rem] text-center zcool-kuaile-regular">
                   Generate
                 </p>

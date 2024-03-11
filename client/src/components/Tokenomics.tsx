@@ -17,7 +17,7 @@ export const Tokenomics = () => {
       className={
         isVisible
           ? "w-full flex flex-col gap-14 justify-center items-center tokenomics-bg mt-[5rem] md:mt-0 lg:mt-0 opacity-100 transition-opacity duration-500 ease-in-out"
-          : "opacity-0 w-full flex flex-col gap-14 justify-center items-center tokenomics-bg"
+          : "opacity-0 w-full flex flex-col gap-14 justify-center items-center tokenomics-bg mt-[5rem] md:mt-0 lg:mt-0"
       }
     >
       <p className="text-[#ED0137] text-[2rem] lg:text-[2.75rem] leading-[2.38rem] lg:leading-[3.25rem] text-center shojumaru-regular">

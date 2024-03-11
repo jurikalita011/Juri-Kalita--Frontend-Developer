@@ -10,8 +10,8 @@ export const TopSection = () => {
       ref={componentRef}
       className={
         isVisible
-          ? "w-full h-[36.75rem] top-bg opacity-100 transition-opacity duration-500 ease-in-out"
-          : "w-full h-[36.75rem] top-bg opacity-0"
+          ? "w-full h-[36.75rem] bg-no-repeat bg-cover top-bg opacity-100 transition-opacity duration-500 ease-in-out"
+          : "w-full h-[36.75rem] bg-no-repeat bg-cover top-bg opacity-0"
       }
     >
       <Navbar />

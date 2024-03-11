@@ -35,7 +35,7 @@ export const Introduction = () => {
           <span className="text-slate-400">read more...</span>
         </p>
 
-        <button className="w-[55%] md:w-[30%] lg:w-[29%] h-[1.5rem] md:h-[2rem]  lg:h-[2.375rem] py-[17px] px-[21px] rounded-[22px] bg-gradient-to-r from-[#D51B46] to-[#EE6910] flex items-center justify-center gap-2">
+        <button className="w-[55%] md:w-[30%] lg:w-[29%] h-[1.5rem] md:h-[3rem]  lg:h-[3.375rem] py-[17px] px-[21px] rounded-[22px] bg-gradient-to-r from-[#D51B46] to-[#EE6910] flex items-center justify-center gap-2">
           <p className="text-[#FFFFFF] text-center leading-[0.9rem] text-[0.9rem] md:leading-[1rem] md:text-[1rem] lg:leading-[1.25rem] lg:text-[1.25rem] zcool-kuaile-regular ">
             Documents
           </p>
