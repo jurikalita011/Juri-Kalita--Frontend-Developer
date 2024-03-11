@@ -1,7 +1,7 @@
 # Saviour - Blockchain Home page
 
 ## Introduction
-This assignment involves implementing a web application based on a provided Figma design, which includes animations. The primary objective is to build a functional and visually appealing frontend application using React, TypeScript and Tailwind CSS. It also allows users to connect their wallets using WalletConnect. 
+This project involves implementing a web application based on a provided Figma design, which includes animations. The primary objective is to build a functional and visually appealing frontend application using React, TypeScript and Tailwind CSS. It also allows users to connect their wallets using WalletConnect. 
 
 ## Project Type
 Frontend
@@ -37,7 +37,7 @@ Frontend
 ├─ package.json
 ```
 ## Video Walkthrough of the project
-[Project-preview](https://drive.google.com/file/d/12pia-_PBR8eNRkCnRIvLgU30t4InHLSH/view?usp=sharing)
+[Project-preview](https://drive.google.com/file/d/1biGrHoIIKvlOlKsZRilM2ohBt1qkkZYF/view?usp=sharing)
 ## Features
 * Implementation of WalletConnect functionality to allow users to connect their wallets.
 * UI built based on the provided Figma design to enhance the user experience using various animations and screen responsiveness.
